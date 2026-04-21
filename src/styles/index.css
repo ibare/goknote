@@ -1,0 +1,22 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@latest/dist/web/variable/pretendardvariable.min.css');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root {
+  height: 100%;
+  background: #F3F1EA;
+  color: #0A0A0A;
+}
+
+body {
+  font-family: 'Pretendard Variable', Pretendard, -apple-system, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.safe-bottom { padding-bottom: calc(env(safe-area-inset-bottom) + 16px); }
+.safe-top { padding-top: calc(env(safe-area-inset-top) + 8px); }
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
