@@ -133,7 +133,7 @@ export const SectionCard = ({ section, instruments, onChange, onDelete, dragList
             onClick={() => setAddChannelOpen(true)}
             className="mt-2 flex items-center gap-1 text-[13px] text-ink-2 bg-cream-soft h-9 px-4 rounded-pill"
           >
-            <Plus size={14} /> Add Channel
+            <Plus size={14} /> Add Instrument
           </button>
         </div>
       </CollapsePresence>
@@ -148,7 +148,7 @@ export const SectionCard = ({ section, instruments, onChange, onDelete, dragList
       <ConfirmDialog
         open={confirmDelete}
         title="Delete section"
-        description={`Remove "${section.name}" and all its channels?`}
+        description={`Remove "${section.name}" and all its instruments?`}
         confirmLabel="Delete"
         onConfirm={() => { setConfirmDelete(false); onDelete(); }}
         onCancel={() => setConfirmDelete(false)}

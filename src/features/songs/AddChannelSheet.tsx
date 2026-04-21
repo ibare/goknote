@@ -42,7 +42,7 @@ export const AddChannelSheet = ({ open, onClose, instruments, onAdd }: AddChanne
   };
 
   return (
-    <BottomSheet open={open} onClose={onClose} title="Add Channel">
+    <BottomSheet open={open} onClose={onClose} title="Add Instrument">
       <div className="px-4 pt-3 pb-4">
         <div className="flex gap-2 overflow-x-auto pb-2 mb-3 no-scrollbar">
           {CATEGORIES.map(cat => (

@@ -42,7 +42,7 @@ export const ChannelRow = ({ channel, onNoteChange, onDelete, dragListeners, dra
             value={note}
             onChange={e => handleChange(e.target.value)}
             onBlur={handleBlur}
-            placeholder="Channel note…"
+            placeholder="Instrument note…"
             rows={2}
             autoFocus
             className="w-full text-[13px] text-ink-2 bg-cream-soft rounded-field px-3 py-2 outline-none resize-none"
@@ -60,13 +60,13 @@ export const ChannelRow = ({ channel, onNoteChange, onDelete, dragListeners, dra
         whileTap={{ scale: 0.94 }}
         onClick={() => setConfirmDelete(true)}
         className="text-ink-3 mt-1 p-1"
-        aria-label="Delete channel"
+        aria-label="Delete instrument"
       >
         <Trash size={16} />
       </motion.button>
       <ConfirmDialog
         open={confirmDelete}
-        title="Delete channel"
+        title="Delete instrument"
         description={`Remove "${channel.name}"?`}
         confirmLabel="Delete"
         onConfirm={() => { setConfirmDelete(false); onDelete(); }}
